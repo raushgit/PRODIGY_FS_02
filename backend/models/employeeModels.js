@@ -19,6 +19,9 @@ const employeeSchema = new Schema({
         type: String,
         required: true,
     },
+    profileImage:{
+        type: String,
+    },
     salary:{
         type: String,
         required: true,
