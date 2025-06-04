@@ -1,41 +1,40 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const employeeSchema = new Schema({
-    name:{
+const EmployeeSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
         type: String,
         required: true,
+        unique: true
     },
-    email:{
+    phone: {
         type: String,
-        required: true,
-        unique: true,
+        required: true
     },
-    phone:{
+    department: {
         type: String,
-        required: true,
+        required: true
     },
-    department:{
-        type: String,
-        required: true,
+    profileImage: {
+        type: String
     },
-    profileImage:{
-        type: String,
+    salary: {
+        type: Number,
+        required: true
     },
-    salary:{
-        type: String,
-        required: true,
-    },
-    createdAt:{
+    createdAt: {
         type: Date,
         default: new Date()
     },
-    updatedAt:{
+    updatedAt: {
         type: Date,
         default: new Date()
-    },
+    }
 });
 
-const EmployeeModel = mongoose.model('employees', employeeSchema);
+const EmployeeModel = mongoose.model('employees', EmployeeSchema);
 module.exports = EmployeeModel;
-// This code defines a Mongoose schema for an employee management system.
