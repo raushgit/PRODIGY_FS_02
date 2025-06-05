@@ -8,7 +8,7 @@ function EmployeeTable({
     employees, pagination,
     fetchEmployees, handleUpdateEmployee }) {
     const headers = ['Name', 'Email', 'Phone', 'Department', 'Actions'];
-    const { currentPage, totalPages } = pagination;
+    const { currentPage, totalPages } = pagination || {};
 
     const handleNextPage = () => {
         if (currentPage < totalPages) {
@@ -127,5 +127,10 @@ function EmployeeTable({
         </>
     )
 }
+
+EmployeeTable.defaultProps = {
+  employees: [],
+  pagination: { currentPage: 1, totalPages: 1 }
+};
 
 export default EmployeeTable
