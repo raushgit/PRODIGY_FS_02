@@ -1,3 +1,5 @@
+// File: backend/Middlewares/FileUploader.js
+// --- a/file:///e%3A/Prgrams/Prodigy%20Internship
 const multer = require('multer');
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const cloudinary = require('cloudinary').v2;
