@@ -1,6 +1,7 @@
 const EmployeeModel = require("../Models/EmployeeModel");
 
-
+// Controller functions for Employee Management
+// These functions handle the creation, retrieval, updating, and deletion of employee records
 const createEmployee = async (req, res) => {
     try {
         const body = req.body;
