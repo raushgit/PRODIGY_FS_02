@@ -1,3 +1,6 @@
+//This is the API file for the frontend application
+//This file contains all the API calls for the frontend application
+//It uses the Fetch API to make requests to the backend server
 const BASE_URL = 'http://localhost:8080';
 
 export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
