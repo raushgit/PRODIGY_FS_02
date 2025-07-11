@@ -5,7 +5,8 @@ import { DeleteEmployeeById, GetAllEmployees } from '../api';
 import { ToastContainer } from 'react-toastify';
 import { notify } from '../utils';
 
-
+// Form here is the main component for the Employee Management App
+// It handles the state and logic for fetching, displaying, and managing employees
 const EmployeeManagementApp = () => {
     const [showModal, setShowModal] = useState(false);
     const [employeeObj, setEmployeeObj] = useState(null)
