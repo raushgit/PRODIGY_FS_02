@@ -6,7 +6,7 @@ import EmployeeDetails from './components/EmployeeDetails';
 // It uses React Router to define the routes for the application
 // The main route redirects to the employee management app
 // The employee management app is displayed at the /employee route
-// The employee details page is displayed at the /employee/:id route
+// The employee details page is displayed at the /employee/:id route\
 function App() {
   return (
     <div>
